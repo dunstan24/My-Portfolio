@@ -7,6 +7,10 @@ const items = [
         dests: [path.join(__dirname, 'public/index.html')]
     },
     {
+        src: path.join(__dirname, 'cv.html'),
+        dests: [path.join(__dirname, 'public/cv.html')]
+    },
+    {
         src: path.join(__dirname, 'style.css'),
         dests: [path.join(__dirname, 'public/style.css'), path.join(__dirname, 'public/css/style.css')]
     },

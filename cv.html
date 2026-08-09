@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunstan Devon - Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --bg-body: #f1f5f9;
+            --bg-paper: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        /* Action Toolbar */
+        .toolbar {
+            max-width: 850px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 14px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .toolbar .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+        }
+        .btn-outline:hover {
+            background: #f8fafc;
+        }
+
+        /* CV Paper Container */
+        .cv-paper {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--bg-paper);
+            padding: 50px 60px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            position: relative;
+        }
+
+        /* Header Section */
+        .cv-header {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
+        }
+
+        .cv-photo {
+            width: 130px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            flex-grow: 1;
+        }
+
+        .cv-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+
+        .cv-contact {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .cv-contact i {
+            width: 18px;
+            color: var(--accent);
+        }
+
+        .divider {
+            height: 3px;
+            background: #000000;
+            margin-bottom: 28px;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .section-line {
+            height: 1px;
+            background: #000000;
+            margin: 24px 0;
+        }
+
+        /* About Me */
+        .about-text {
+            font-size: 0.93rem;
+            color: #1e293b;
+            text-align: justify;
+            line-height: 1.65;
+        }
+
+        /* Strengths & Expertise */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .expertise-column {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .expertise-item {
+            font-weight: 500;
+            color: #1e293b;
+        }
+        .expertise-item small {
+            display: block;
+            color: var(--text-muted);
+            font-weight: 400;
+            font-size: 0.82rem;
+        }
+
+        /* Job Experience */
+        .job-item {
+            margin-bottom: 24px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .job-company {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .job-date {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .job-role {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .accomplishments-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 6px;
+        }
+
+        .job-bullets {
+            padding-left: 20px;
+            font-size: 0.88rem;
+            color: #334155;
+        }
+
+        .job-bullets li {
+            margin-bottom: 8px;
+            line-height: 1.55;
+            text-align: justify;
+        }
+
+        /* Education */
+        .edu-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .edu-school {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #000000;
+        }
+
+        .edu-field {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* References */
+        .ref-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .ref-item {
+            line-height: 1.4;
+        }
+
+        .ref-name {
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .ref-phone {
+            color: var(--text-muted);
+        }
+
+        /* Print Media Styles */
+        @media print {
+            body {
+                background: #ffffff;
+                padding: 0;
+            }
+            .toolbar {
+                display: none !important;
+            }
+            .cv-paper {
+                box-shadow: none;
+                padding: 20px 30px;
+                max-width: 100%;
+            }
+            .section-line {
+                margin: 18px 0;
+            }
+            .job-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Toolbar (Hidden during print) -->
+    <div class="toolbar">
+        <a href="/" class="btn btn-outline">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <div style="display:flex; gap:10px;">
+            <button onclick="window.print()" class="btn btn-primary">
+                <i class="fas fa-print"></i> Print / Save as PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- CV Paper Document -->
+    <div class="cv-paper">
+        <!-- Header -->
+        <div class="cv-header">
+            <img src="portrait.png" alt="Dunstan Devon" class="cv-photo" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face'">
+            <div class="header-text">
+                <h1 class="cv-name">DUNSTAN DEVON</h1>
+                <div class="cv-contact">
+                    <p><i class="fas fa-phone"></i> 0895630478594 &nbsp;·&nbsp; <i class="fas fa-envelope"></i> dunstandevon2@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> JL Petitenget Gang Rahayu III., Bali</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- About Me -->
+        <h2 class="section-heading">ABOUT ME</h2>
+        <p class="about-text">
+            I am an adaptive and meticulous individual, accustomed to working in a structured manner to resolve various challenges efficiently. I possess strong analytical skills that enable me to understand requirements and translate them into effective solutions, supported by strong teamwork and collaboration abilities. In addition, I have solid public speaking skills and am able to communicate effectively in English, both verbally and in writing. As an added value, I have equipped myself with technical proficiency in Web Development and Microsoft Excel to support work productivity.
+        </p>
+
+        <div class="section-line"></div>
+
+        <!-- Strengths and Expertise -->
+        <h2 class="section-heading">STRENGTHS AND EXPERTISE</h2>
+        <div class="expertise-grid">
+            <div class="expertise-column">
+                <div class="expertise-item">Front-End Development</div>
+                <div class="expertise-item">Back-End Development</div>
+                <div class="expertise-item">Database Management</div>
+            </div>
+            <div class="expertise-column">
+                <div class="expertise-item">Team Leadership</div>
+                <div class="expertise-item">Communication</div>
+                <div class="expertise-item">Operational Management</div>
+            </div>
+            <div class="expertise-column">
+                <div class="expertise-item">Microsoft Excel <small>(Reporting)</small></div>
+                <div class="expertise-item">Spreadsheet Automation <small>(Formulas)</small></div>
+                <div class="expertise-item">Data Visualization <small>(Excel Charts)</small></div>
+            </div>
+        </div>
+
+        <div class="section-line"></div>
+
+        <!-- Job Experience -->
+        <h2 class="section-heading">JOB EXPERIENCE</h2>
+
+        <!-- Job 1 -->
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-company">Interlace Studies</span>
+                <span class="job-date">April 2026 - Present</span>
+            </div>
+            <div class="job-role">Full Stack Programmer</div>
+            <div class="accomplishments-title">Accomplishments:</div>
+            <ul class="job-bullets">
+                <li>Developed ISWARA (Integrated Solution Waste Range), an integrated Web GIS-based Smart Waste Management System platform for TPS 3R Sapuh Jagat, built using Laravel 13, React.js (TypeScript), and PostgreSQL (PostGIS). The platform comprehensively maps customer geospatial coordinates and collection routes, supported by real-time GPS fleet tracking via WebSockets (Laravel Reverb). The system also features an automated billing engine based on Laravel Queue, distributing thousands of monthly invoices on a scheduled basis without compromising server performance.</li>
+                <li>Built a full-stack Migration Intelligence Platform using Next.js (frontend) and Python (backend), supported by an API-based architecture and a MySQL database. This project involved integrating a custom-trained Machine Learning model to predict migration likelihood based on user profiles, as well as designing a Gemini-based Artificial Intelligence Advisor to deliver automated recommendations and an interactive Q&A service for clients.</li>
+                <li>Developed a large-scale automated job listing data collection system using Python and Playwright to extract information from the Jora and CareerOne portals, implementing robust browser automation logic to circumvent bot detection mechanisms. The system was integrated with an interactive React-based dashboard and a MySQL database, significantly transforming a manual data collection process into an automated one and accelerating the company's job market analysis.</li>
+            </ul>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-company">Smokey’s Protein Smoothies</span>
+                <span class="job-date">April 2022 - 2026</span>
+            </div>
+            <div class="job-role">Store Crew</div>
+            <div class="accomplishments-title">Accomplishments:</div>
+            <ul class="job-bullets">
+                <li>Assisted the business owner in developing a macro-based application for internal store needs, functioning to automatically and accurately calculate the calorie count (kcal) of each beverage variant.</li>
+                <li>Designed the calorie calculation logic using a structured approach, integrating raw material data and measurement units into the macro-based system to produce consistent calculations usable by all staff.</li>
+                <li>Applied basic programming skills, algorithmic logic, and problem-solving to support operational decision-making and improve work efficiency through simple yet effective technological solutions.</li>
+                <li>Played an active role as store operational staff responsible for beverage preparation, while implementing procedure-based work standards to ensure product quality consistency and daily workflow efficiency.</li>
+                <li>Trained and mentored new employees using a systematic approach, including guidance on workflow, equipment usage, and operational process documentation to accelerate adaptation and minimize work errors.</li>
+                <li>Managed raw material and store equipment inventory through routine stock recording, needs analysis, and inventory control to prevent stockouts and waste.</li>
+            </ul>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-company">Beer &amp; Co</span>
+                <span class="job-date">August 2020 - Present</span>
+            </div>
+            <div class="job-role">Daily Worker</div>
+            <div class="accomplishments-title">Accomplishments:</div>
+            <ul class="job-bullets">
+                <li>Worked as a daily worker to support operations during staff shortages, particularly during major events and busy periods such as Christmas and Halloween.</li>
+                <li>Served as a waitress, engaging guests directly by taking orders, serving drinks, and ensuring a comfortable and professional experience throughout each event.</li>
+                <li>Built active rapport with guests through a persuasive and friendly approach to extend visit duration and encourage additional drink purchases.</li>
+                <li>Applied natural upselling techniques by recommending drinks tailored to guest preferences, helping to increase sales during events.</li>
+                <li>Able to work quickly and adaptively in high-pressure environments involving large visitor volumes and packed operational schedules.</li>
+            </ul>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="job-item">
+            <div class="job-header">
+                <span class="job-company">Duwur Studio</span>
+                <span class="job-date">February 2018</span>
+            </div>
+            <div class="job-role">Internship</div>
+            <div class="accomplishments-title">Accomplishments:</div>
+            <ul class="job-bullets">
+                <li>Worked as an intern focused on visual content processing, specifically editing wedding photo collages and wedding videos in line with client concepts and requests.</li>
+                <li>Operated photo and video editing software to produce visual content that was engaging, polished, and aesthetically refined.</li>
+                <li>Directly involved in on-site fieldwork, helping to manage a photo booth stand during events and ensuring equipment and workflow ran smoothly.</li>
+                <li>Followed and studied the prewedding photoshoot process, from equipment preparation and concept planning through to the on-site workflow of the photography and videography team.</li>
+                <li>Demonstrated strong adaptability and eagerness to learn by being directly involved in the studio's creative and operational processes, both technical and non-technical.</li>
+                <li>Collaborated with the team to ensure photo and video output met the studio's quality standards and agreed production schedules.</li>
+            </ul>
+        </div>
+
+        <div class="section-line"></div>
+
+        <!-- Education -->
+        <h2 class="section-heading">EDUCATION</h2>
+        <div class="edu-grid">
+            <div class="edu-item">
+                <span class="edu-school">STIKOM BALI</span>
+                <span class="edu-field">Information Technology</span>
+            </div>
+            <div class="edu-item">
+                <span class="edu-school">SMK TI BALI GLOBAL JIMBARAN</span>
+                <span class="edu-field">Multimedia</span>
+            </div>
+        </div>
+
+        <div class="section-line"></div>
+
+        <!-- References -->
+        <div class="ref-list">
+            <div class="ref-item">
+                <span class="ref-name">Ida Bagus Irawan Purnama, S.T., M.Sc., Ph.D.</span> (Leader Interlace Studies)<br>
+                <span class="ref-phone">+62 811-395-648</span>
+            </div>
+            <div class="ref-item">
+                <span class="ref-name">LENNY RATNA LAWI</span> (Manager Beer &amp; Co)<br>
+                <span class="ref-phone">+62 811-395-648</span>
+            </div>
+            <div class="ref-item">
+                <span class="ref-name">WAHYU WULANDARI</span> (Manager Smokey’s Protein Smoothies)<br>
+                <span class="ref-phone">+62 877-6165-8228</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Check if download URL param exists to automatically launch print dialog
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('download') || urlParams.has('print')) {
+            window.addEventListener('load', () => {
+                setTimeout(() => window.print(), 300);
+            });
+        }
+    </script>
+</body>
+</html>

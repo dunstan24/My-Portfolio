@@ -204,10 +204,13 @@ if (contactForm) {
         const originalText = submitBtn.innerHTML;
 
         if (!name || !email || !subject || !message) {
-            feedbackEl.innerHTML = `
-                <div style="background:rgba(239,68,68,.15);color:#f87171;border:1px solid rgba(239,68,68,.3);padding:12px 16px;border-radius:8px;font-size:.9rem;display:flex;align-items:center;gap:8px;">
-                    <i class="fas fa-exclamation-circle"></i> Please fill out all fields.
-                </div>`;
+            showError('Please fill out all fields.');
+            return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email)) {
+            showError('Please enter a valid email address (e.g. name@example.com).');
             return;
         }
 
@@ -227,7 +230,8 @@ if (contactForm) {
             showSuccess();
         } catch (err) {
             console.error('EmailJS error:', err);
-            showError('Failed to send message. Please email <strong>smokeysssa@gmail.com</strong> directly.');
+            const mailtoUrl = `mailto:dunstandevon2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + " (" + email + ")\n\n" + message)}`;
+            showError(`Failed to send via auto-mailer. <a href="${mailtoUrl}" target="_blank" style="color:#00d4ff; text-decoration:underline;">Click here to send email to dunstandevon2@gmail.com directly</a>.`);
         }
 
         function showSuccess() {
