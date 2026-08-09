@@ -81,7 +81,7 @@
             max-width: 850px;
             margin: 0 auto;
             background: var(--bg-paper);
-            padding: 60px 70px;
+            padding: 50px 60px;
             border-radius: 2px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             position: relative;
@@ -91,13 +91,13 @@
         .cv-header {
             display: flex;
             align-items: center;
-            gap: 40px;
-            margin-bottom: 24px;
+            gap: 36px;
+            margin-bottom: 20px;
         }
 
         .cv-photo {
-            width: 145px;
-            height: 175px;
+            width: 135px;
+            height: 162px;
             object-fit: cover;
             border-radius: 2px;
             flex-shrink: 0;
@@ -109,12 +109,12 @@
         }
 
         .cv-name {
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             font-weight: 800;
-            letter-spacing: 3px;
+            letter-spacing: 2.5px;
             text-transform: uppercase;
             color: #000000;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             line-height: 1.1;
         }
 
@@ -126,49 +126,49 @@
         }
 
         .divider {
-            height: 3px;
+            height: 2.5px;
             background: #000000;
-            margin: 24px 0;
+            margin: 20px 0;
         }
 
         .section-heading {
             text-align: center;
-            font-size: 1.15rem;
+            font-size: 1.12rem;
             font-weight: 800;
             letter-spacing: 2px;
             text-transform: uppercase;
             color: #000000;
-            margin-bottom: 18px;
+            margin-bottom: 14px;
         }
 
         .section-line {
             height: 1.5px;
             background: #000000;
-            margin: 24px 0;
+            margin: 20px 0;
         }
 
         /* About Me */
         .about-text {
-            font-size: 0.95rem;
+            font-size: 0.93rem;
             color: #000000;
             text-align: justify;
-            line-height: 1.65;
+            line-height: 1.6;
         }
 
         /* Strengths & Expertise */
         .expertise-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
+            gap: 14px;
             text-align: center;
-            font-size: 0.92rem;
-            line-height: 1.6;
+            font-size: 0.9rem;
+            line-height: 1.55;
         }
 
         .expertise-column {
             display: flex;
             flex-direction: column;
-            gap: 6px;
+            gap: 5px;
         }
 
         .expertise-item {
@@ -178,51 +178,51 @@
 
         /* Job Experience */
         .job-item {
-            margin-bottom: 28px;
+            margin-bottom: 22px;
         }
 
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .job-company {
-            font-size: 1.1rem;
+            font-size: 1.08rem;
             font-weight: 700;
             color: #000000;
         }
 
         .job-date {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: 700;
             color: #000000;
         }
 
         .job-role {
-            font-size: 1rem;
+            font-size: 0.96rem;
             font-weight: 700;
             color: #000000;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .accomplishments-title {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: 500;
             color: #000000;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .job-bullets {
-            padding-left: 20px;
-            font-size: 0.92rem;
+            padding-left: 18px;
+            font-size: 0.9rem;
             color: #000000;
         }
 
         .job-bullets li {
-            margin-bottom: 8px;
-            line-height: 1.55;
+            margin-bottom: 6px;
+            line-height: 1.5;
             text-align: justify;
         }
 
@@ -230,7 +230,7 @@
         .edu-grid {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
         }
 
         .edu-item {
@@ -241,12 +241,12 @@
 
         .edu-school {
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.98rem;
             color: #000000;
         }
 
         .edu-field {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             color: #000000;
         }
 
@@ -254,12 +254,12 @@
         .ref-list {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            font-size: 0.95rem;
+            gap: 8px;
+            font-size: 0.92rem;
         }
 
         .ref-item {
-            line-height: 1.45;
+            line-height: 1.42;
         }
 
         .ref-name {
@@ -271,10 +271,10 @@
             color: #000000;
         }
 
-        /* ── PRINT MEDIA STYLES (MATCHES THE 3 PDF SCREENSHOTS 100%) ── */
+        /* ── OPTIMIZED PRINT MEDIA (ELIMINATES ALL EMPTY SPACES) ── */
         @page {
             size: A4 portrait;
-            margin: 20mm 20mm 20mm 20mm;
+            margin: 14mm 16mm 14mm 16mm;
         }
 
         @media print {
@@ -283,8 +283,8 @@
                 color: #000000 !important;
                 padding: 0 !important;
                 margin: 0 !important;
-                font-size: 10pt !important;
-                line-height: 1.5 !important;
+                font-size: 9.6pt !important;
+                line-height: 1.46 !important;
             }
             .toolbar {
                 display: none !important;
@@ -297,98 +297,92 @@
                 width: 100% !important;
             }
             .cv-header {
-                gap: 32px !important;
-                margin-bottom: 20px !important;
+                gap: 28px !important;
+                margin-bottom: 12px !important;
             }
             .cv-photo {
-                width: 140px !important;
-                height: 165px !important;
+                width: 122px !important;
+                height: 146px !important;
             }
             .cv-name {
-                font-size: 2.5rem !important;
-                letter-spacing: 3px !important;
-                margin-bottom: 10px !important;
+                font-size: 2.25rem !important;
+                letter-spacing: 2.5px !important;
+                margin-bottom: 6px !important;
             }
             .cv-contact {
-                font-size: 9.5pt !important;
-                line-height: 1.6 !important;
+                font-size: 9pt !important;
+                line-height: 1.5 !important;
             }
             .divider {
-                height: 3px !important;
+                height: 2px !important;
                 background: #000000 !important;
-                margin: 20px 0 !important;
+                margin: 14px 0 !important;
             }
             .section-heading {
-                font-size: 1.15rem !important;
-                margin-bottom: 14px !important;
-                letter-spacing: 2px !important;
+                font-size: 1.08rem !important;
+                margin-bottom: 10px !important;
+                letter-spacing: 1.8px !important;
                 break-after: avoid !important;
                 page-break-after: avoid !important;
             }
             .section-line {
-                height: 1.5px !important;
+                height: 1.2px !important;
                 background: #000000 !important;
-                margin: 20px 0 !important;
+                margin: 14px 0 !important;
             }
             .about-text {
-                font-size: 9.8pt !important;
-                line-height: 1.6 !important;
+                font-size: 9.1pt !important;
+                line-height: 1.48 !important;
             }
             .expertise-grid {
-                gap: 12px !important;
-                font-size: 9.5pt !important;
+                gap: 8px !important;
+                font-size: 8.8pt !important;
             }
             .job-item {
-                margin-bottom: 24px !important;
+                margin-bottom: 16px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
             .job-header {
-                margin-bottom: 4px !important;
+                margin-bottom: 2px !important;
                 break-after: avoid !important;
                 page-break-after: avoid !important;
             }
             .job-company {
-                font-size: 1.08rem !important;
+                font-size: 1.02rem !important;
             }
             .job-date {
-                font-size: 0.95rem !important;
+                font-size: 0.88rem !important;
             }
             .job-role {
-                font-size: 1rem !important;
-                margin-bottom: 8px !important;
+                font-size: 0.92rem !important;
+                margin-bottom: 5px !important;
             }
             .accomplishments-title {
-                font-size: 0.92rem !important;
-                margin-bottom: 6px !important;
+                font-size: 0.88rem !important;
+                margin-bottom: 3px !important;
             }
             .job-bullets {
-                font-size: 9.5pt !important;
-                padding-left: 20px !important;
+                font-size: 8.8pt !important;
+                padding-left: 16px !important;
             }
             .job-bullets li {
-                margin-bottom: 6px !important;
-                line-height: 1.55 !important;
+                margin-bottom: 4px !important;
+                line-height: 1.45 !important;
             }
             .edu-grid {
-                gap: 10px !important;
+                gap: 6px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
-            .edu-school { font-size: 1rem !important; }
-            .edu-field  { font-size: 0.95rem !important; }
+            .edu-school { font-size: 0.95rem !important; }
+            .edu-field  { font-size: 0.88rem !important; }
             .ref-list {
-                gap: 10px !important;
+                gap: 6px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
-            .ref-item { font-size: 9.5pt !important; line-height: 1.5 !important; }
-
-            /* Forced page break helpers */
-            .page-break-after {
-                break-after: page !important;
-                page-break-after: always !important;
-            }
+            .ref-item { font-size: 8.8pt !important; line-height: 1.4 !important; }
 
             a {
                 text-decoration: none !important;
@@ -461,8 +455,8 @@
         <!-- Job Experience -->
         <h2 class="section-heading">JOB EXPERIENCE</h2>
 
-        <!-- Job 1 (End of Page 1) -->
-        <div class="job-item page-break-after">
+        <!-- Job 1 -->
+        <div class="job-item">
             <div class="job-header">
                 <span class="job-company">Interlace Studies</span>
                 <span class="job-date">April 2026- Present</span>
@@ -476,7 +470,7 @@
             </ul>
         </div>
 
-        <!-- Job 2 (Start of Page 2) -->
+        <!-- Job 2 -->
         <div class="job-item">
             <div class="job-header">
                 <span class="job-company">Smokey’s Protein Smoothies</span>
@@ -494,8 +488,8 @@
             </ul>
         </div>
 
-        <!-- Job 3 (End of Page 2) -->
-        <div class="job-item page-break-after">
+        <!-- Job 3 -->
+        <div class="job-item">
             <div class="job-header">
                 <span class="job-company">Beer &amp; Co</span>
                 <span class="job-date">August 2020 - Present</span>
@@ -511,7 +505,7 @@
             </ul>
         </div>
 
-        <!-- Job 4 (Start of Page 3) -->
+        <!-- Job 4 -->
         <div class="job-item">
             <div class="job-header">
                 <span class="job-company">Duwur Studio</span>
@@ -531,7 +525,7 @@
 
         <div class="section-line"></div>
 
-        <!-- Education (Page 3) -->
+        <!-- Education -->
         <h2 class="section-heading">EDUCATION</h2>
         <div class="edu-grid">
             <div class="edu-item">
@@ -546,7 +540,7 @@
 
         <div class="section-line"></div>
 
-        <!-- References (Page 3) -->
+        <!-- References -->
         <div class="ref-list">
             <div class="ref-item">
                 <span class="ref-name">Ida Bagus Irawan Purnama, S.T., M,Sc., Ph.D.</span> (Leader Interlace Studies)<br>
