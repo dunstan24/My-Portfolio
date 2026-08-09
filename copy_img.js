@@ -3,6 +3,18 @@ const path = require('path');
 
 const items = [
     {
+        src: path.join(__dirname, 'index.html'),
+        dests: [path.join(__dirname, 'public/index.html')]
+    },
+    {
+        src: path.join(__dirname, 'style.css'),
+        dests: [path.join(__dirname, 'public/style.css'), path.join(__dirname, 'public/css/style.css')]
+    },
+    {
+        src: path.join(__dirname, 'script.js'),
+        dests: [path.join(__dirname, 'public/script.js'), path.join(__dirname, 'public/js/script.js')]
+    },
+    {
         src: 'C:/Users/USER/.gemini/antigravity-ide/brain/5a04e9f2-4255-49bd-9d50-2fdd96e2f901/media__1786026951456.png',
         dests: [
             path.join(__dirname, 'public/job_scraper_dashboard.png'),
