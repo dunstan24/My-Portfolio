@@ -271,10 +271,10 @@
             color: #000000;
         }
 
-        /* ── OPTIMIZED PRINT MEDIA (ELIMINATES ALL EMPTY SPACES) ── */
+        /* ── PRINT MEDIA (STRICT PAGE 3 BREAK FOR EDUCATION) ── */
         @page {
             size: A4 portrait;
-            margin: 14mm 16mm 14mm 16mm;
+            margin: 18mm 16mm 14mm 16mm;
         }
 
         @media print {
@@ -283,8 +283,8 @@
                 color: #000000 !important;
                 padding: 0 !important;
                 margin: 0 !important;
-                font-size: 9.6pt !important;
-                line-height: 1.46 !important;
+                font-size: 9.5pt !important;
+                line-height: 1.45 !important;
             }
             .toolbar {
                 display: none !important;
@@ -298,14 +298,14 @@
             }
             .cv-header {
                 gap: 28px !important;
-                margin-bottom: 12px !important;
+                margin-bottom: 10px !important;
             }
             .cv-photo {
-                width: 122px !important;
-                height: 146px !important;
+                width: 120px !important;
+                height: 144px !important;
             }
             .cv-name {
-                font-size: 2.25rem !important;
+                font-size: 2.2rem !important;
                 letter-spacing: 2.5px !important;
                 margin-bottom: 6px !important;
             }
@@ -316,11 +316,11 @@
             .divider {
                 height: 2px !important;
                 background: #000000 !important;
-                margin: 14px 0 !important;
+                margin: 12px 0 !important;
             }
             .section-heading {
-                font-size: 1.08rem !important;
-                margin-bottom: 10px !important;
+                font-size: 1.05rem !important;
+                margin-bottom: 8px !important;
                 letter-spacing: 1.8px !important;
                 break-after: avoid !important;
                 page-break-after: avoid !important;
@@ -328,18 +328,19 @@
             .section-line {
                 height: 1.2px !important;
                 background: #000000 !important;
-                margin: 14px 0 !important;
+                margin: 12px 0 !important;
             }
             .about-text {
-                font-size: 9.1pt !important;
-                line-height: 1.48 !important;
+                font-size: 9pt !important;
+                line-height: 1.46 !important;
             }
             .expertise-grid {
-                gap: 8px !important;
+                gap: 6px !important;
                 font-size: 8.8pt !important;
             }
             .job-item {
                 margin-bottom: 16px !important;
+                padding-top: 4px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
@@ -349,14 +350,14 @@
                 page-break-after: avoid !important;
             }
             .job-company {
-                font-size: 1.02rem !important;
+                font-size: 1rem !important;
             }
             .job-date {
                 font-size: 0.88rem !important;
             }
             .job-role {
                 font-size: 0.92rem !important;
-                margin-bottom: 5px !important;
+                margin-bottom: 4px !important;
             }
             .accomplishments-title {
                 font-size: 0.88rem !important;
@@ -368,7 +369,7 @@
             }
             .job-bullets li {
                 margin-bottom: 4px !important;
-                line-height: 1.45 !important;
+                line-height: 1.44 !important;
             }
             .edu-grid {
                 gap: 6px !important;
@@ -383,6 +384,12 @@
                 page-break-inside: avoid !important;
             }
             .ref-item { font-size: 8.8pt !important; line-height: 1.4 !important; }
+
+            /* Force Page 3 break right before EDUCATION */
+            .page-break-before {
+                break-before: page !important;
+                page-break-before: always !important;
+            }
 
             a {
                 text-decoration: none !important;
@@ -523,24 +530,27 @@
             </ul>
         </div>
 
-        <div class="section-line"></div>
+        <!-- Section Line with Page 3 Break -->
+        <div class="section-line page-break-before"></div>
 
-        <!-- Education -->
-        <h2 class="section-heading">EDUCATION</h2>
-        <div class="edu-grid">
-            <div class="edu-item">
-                <span class="edu-school">STIKOM BALI</span>
-                <span class="edu-field">information Technology</span>
-            </div>
-            <div class="edu-item">
-                <span class="edu-school">SMK TI BALI GLOBAL JIMBARAN</span>
-                <span class="edu-field">Multimedia</span>
+        <!-- Education (Starts at top of Page 3) -->
+        <div class="education-section">
+            <h2 class="section-heading">EDUCATION</h2>
+            <div class="edu-grid">
+                <div class="edu-item">
+                    <span class="edu-school">STIKOM BALI</span>
+                    <span class="edu-field">information Technology</span>
+                </div>
+                <div class="edu-item">
+                    <span class="edu-school">SMK TI BALI GLOBAL JIMBARAN</span>
+                    <span class="edu-field">Multimedia</span>
+                </div>
             </div>
         </div>
 
         <div class="section-line"></div>
 
-        <!-- References -->
+        <!-- References (Page 3) -->
         <div class="ref-list">
             <div class="ref-item">
                 <span class="ref-name">Ida Bagus Irawan Purnama, S.T., M,Sc., Ph.D.</span> (Leader Interlace Studies)<br>
