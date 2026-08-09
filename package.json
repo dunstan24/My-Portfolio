@@ -4,6 +4,7 @@
   "description": "Dunstan Devon - Web Developer Portfolio",
   "main": "index.html",
   "scripts": {
+    "build": "node copy_img.js",
     "copy-img": "node copy_img.js",
     "predev": "node copy_img.js",
     "dev": "php -S localhost:8000 -t public",
