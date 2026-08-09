@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dunstan Devon - Web Developer Portfolio. Passionate about creating stunning web experiences.">
+    <meta name="description" content="Dunstan Devon - Web Developer Portfolio. Specializing in high-performance web applications.">
     <title>Dunstan Devon | Web Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,6 @@
         <div class="hero-card">
             <!-- Navigation -->
             <nav class="navbar" id="navbar">
-
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
                     <li><a href="#about" class="nav-link" data-section="about">About</a></li>
@@ -26,66 +25,92 @@
                     <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
                 </ul>
                 <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
             </nav>
 
             <!-- Hero Content -->
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-intro-badge" style="display:inline-flex; align-items:center; gap:8px; padding:6px 14px; background:rgba(0,212,255,0.1); border:1px solid rgba(0,212,255,0.25); border-radius:20px; color:#00d4ff; font-size:0.8rem; margin-bottom:16px;">
+                        <span class="dot" style="width:8px; height:8px; background:#00d4ff; border-radius:50%; display:inline-block;"></span>
+                        Available for work
+                    </div>
                     <h1 class="hero-title">
-                        <span class="greeting">Hi, I'm</span> Dunstan Devon
+                        <span class="greeting">Hi there, I'm</span>
+                        Dunstan Devon
                     </h1>
                     <h2 class="hero-subtitle">Web Developer</h2>
                     <p class="hero-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea
-                        laudantium dolorum beatae vitae quae aperiam, magnam delectus illum
-                        voluptate corrupti. Cupiditate non quisquam ex.
+                        Passionate about crafting intuitive, accessible, and high-performance digital experiences.
+                        Specializing in modern JavaScript frameworks, responsive UI architecture, and elegant design systems.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary" id="hire-me-btn">Hire Me</a>
-                        <a href="#contact" class="btn btn-outline" id="lets-talk-btn">Let's Talk</a>
+                        <a href="#contact" class="btn btn-primary" id="hire-me-btn">
+                            <i class="fas fa-paper-plane"></i> Hire Me
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline" id="view-work-btn">
+                            <i class="fas fa-briefcase"></i> View Work
+                        </a>
                     </div>
                 </div>
+
                 <div class="hero-image">
-                    <div class="image-wrapper">
-                        <img src="portrait.png" alt="Dunstan Devon - Web Developer" id="hero-portrait">
+                    <div class="image-frame">
+                        <div class="image-wrapper">
+                            <img src="portrait.png" alt="Dunstan Devon - Web Developer" id="hero-portrait">
+                        </div>
                         <div class="image-glow"></div>
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- Bottom Glow -->
         <div class="hero-bottom-glow"></div>
     </section>
 
     <!-- ===== ABOUT SECTION ===== -->
     <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div style="text-align:center; margin-bottom:56px;">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Adaptive, meticulous, and driven to deliver effective solutions</p>
+            </div>
             <div class="about-content">
                 <div class="about-image">
                     <div class="about-img-wrapper">
                         <img src="portrait.png" alt="About Dunstan Devon">
-                        <div class="about-img-border"></div>
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>I'm a passionate <span class="highlight">Web Developer</span></h3>
+                    <h3>I'm a <span class="highlight">Meticulous Problem Solver</span></h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
-                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        I am an adaptive and meticulous individual, accustomed to working in a structured manner to resolve
+                        various challenges efficiently. I possess strong analytical skills that enable me to understand
+                        requirements and translate them into effective solutions, supported by strong teamwork and collaboration
+                        abilities.
                     </p>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                        I have solid public speaking skills and am able to communicate effectively in English,
+                        both verbally and in writing. As an added value, I have equipped myself with technical proficiency in
+                        Web Development and Microsoft Excel to support work productivity.
                     </p>
-                    <a href="/cv?download=1" target="_blank" class="btn btn-primary" style="margin-top:20px;"><i class="fas fa-download"></i> Download CV</a>
+
+                    <p style="font-size:.75rem; font-weight:700; color:var(--text-muted, #7a8a9a); letter-spacing:.12em; text-transform:uppercase; margin-bottom:14px; margin-top:8px;">Strengths &amp; Expertise</p>
+                    <div class="skill-tags" style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px;">
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-code" style="margin-right:5px;"></i>Front-End Development</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-server" style="margin-right:5px;"></i>Back-End Development</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-database" style="margin-right:5px;"></i>Database Management</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-users" style="margin-right:5px;"></i>Team Leadership</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-comments" style="margin-right:5px;"></i>Communication</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-cogs" style="margin-right:5px;"></i>Operational Management</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-file-excel" style="margin-right:5px;"></i>Microsoft Excel</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-magic" style="margin-right:5px;"></i>Spreadsheet Automation</span>
+                        <span class="skill-tag" style="padding:6px 14px; background:rgba(0,212,255,0.08); border:1px solid rgba(0,212,255,0.2); border-radius:20px; font-size:0.8rem;"><i class="fas fa-chart-bar" style="margin-right:5px;"></i>Data Visualization</span>
+                    </div>
+
+                    <a href="/cv?download=1" target="_blank" class="btn btn-primary" style="margin-top:16px;">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
                 </div>
             </div>
         </div>
@@ -94,23 +119,25 @@
     <!-- ===== SERVICES SECTION ===== -->
     <section id="services" class="section services-section">
         <div class="container">
-            <h2 class="section-title">My <span class="highlight">Services</span></h2>
-            <p class="section-subtitle">What I offer to bring your ideas to life</p>
+            <div style="text-align:center; margin-bottom:56px;">
+                <h2 class="section-title">My <span class="highlight">Services</span></h2>
+                <p class="section-subtitle">Comprehensive solutions to bring your ideas to life</p>
+            </div>
             <div class="services-grid">
                 <div class="service-card" id="service-web-design">
                     <div class="service-icon"><i class="fas fa-palette"></i></div>
                     <h3>Web Design</h3>
-                    <p>Creating visually stunning and user-friendly website designs that captivate your audience and elevate your brand.</p>
+                    <p>Creating visually stunning and user-friendly website designs that captivate your audience and elevate your brand identity.</p>
                 </div>
                 <div class="service-card" id="service-web-dev">
                     <div class="service-icon"><i class="fas fa-code"></i></div>
                     <h3>Web Development</h3>
-                    <p>Building responsive, high-performance websites using modern technologies and best practices.</p>
+                    <p>Building responsive, high-performance websites using modern technologies, clean architecture, and best practices.</p>
                 </div>
                 <div class="service-card" id="service-ui-ux">
                     <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>UI/UX Design</h3>
-                    <p>Designing intuitive user interfaces and seamless user experiences that keep your users engaged.</p>
+                    <h3>UI / UX Design</h3>
+                    <p>Designing intuitive user interfaces and seamless user experiences that keep your users engaged and converting.</p>
                 </div>
                 <div class="service-card" id="service-backend">
                     <div class="service-icon"><i class="fas fa-server"></i></div>
@@ -120,12 +147,12 @@
                 <div class="service-card" id="service-maintenance">
                     <div class="service-icon"><i class="fas fa-tools"></i></div>
                     <h3>Maintenance</h3>
-                    <p>Providing ongoing website maintenance and support to ensure your site runs smoothly and securely.</p>
+                    <p>Providing ongoing website maintenance, updates, and support to ensure your site runs smoothly and securely.</p>
                 </div>
                 <div class="service-card" id="service-consulting">
                     <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
                     <h3>Consulting</h3>
-                    <p>Offering expert advice and strategic guidance to help you achieve your digital goals effectively.</p>
+                    <p>Offering expert technical advice and strategic guidance to help you achieve your digital objectives effectively.</p>
                 </div>
             </div>
         </div>
@@ -134,8 +161,10 @@
     <!-- ===== PORTFOLIO SECTION ===== -->
     <section id="portfolio" class="section portfolio-section">
         <div class="portfolio-header container">
-            <h2 class="section-title">My <span class="highlight">Portfolio</span></h2>
-            <p class="section-subtitle">Recent projects I've worked on — these are just demos showing how each website looks and functions.</p>
+            <div style="text-align:center; margin-bottom:40px;">
+                <h2 class="section-title">My <span class="highlight">Portfolio</span></h2>
+                <p class="section-subtitle">Recent projects I've worked on — these are just demos showing how each website looks and functions.</p>
+            </div>
         </div>
 
         <!-- Horizontal scroll track -->
@@ -143,240 +172,74 @@
             <div class="portfolio-track" id="portfolio-grid">
 
                 <!-- Real Project: Migration Dashboard -->
-                <a href="https://migration-flame.vercel.app/dashboard" target="_blank" rel="noopener" class="pcard" data-category="web" id="portfolio-migration-dashboard">
+                <a href="https://migration-flame.vercel.app/dashboard" target="_blank" rel="noopener" class="pcard" data-category="web">
                     <div class="pcard-preview" style="background: linear-gradient(135deg, #0b0f19 0%, #172554 50%, #3b82f6 100%);">
                         <img src="migration_dashboard.png" alt="Migration Dashboard" class="pcard-screenshot">
                         <div class="pcard-badge"><i class="fas fa-star"></i> Live</div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(59,130,246,0.5) 0%, transparent 70%);"></div>
                     </div>
                     <div class="pcard-body">
                         <span class="pcard-cat">Web Development</span>
                         <h4 class="pcard-title">Migration Dashboard</h4>
-                        <p class="pcard-desc">Australian SkillSelect EOI & Migration Data Analytics Dashboard with predictive AI tools & shortage maps.</p>
+                        <p class="pcard-desc">An advanced data analytics platform for tracking Australian SkillSelect EOI data, visa quota allocations, and predictive AI modeling.</p>
                         <div class="pcard-tags">
-                            <span>Next.js</span><span>React</span><span>Tailwind</span><span>Recharts</span>
+                            <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>Recharts</span><span>Analytics AI</span>
                         </div>
                         <span class="pcard-btn"><i class="fas fa-external-link-alt"></i> Live Demo</span>
                     </div>
                 </a>
 
                 <!-- Real Project: Job Scraper Dashboard -->
-                <a href="https://scraper-psi-five.vercel.app/" target="_blank" rel="noopener" class="pcard" data-category="web" id="portfolio-job-scraper">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #0b0f19 0%, #1e1b4b 50%, #06b6d4 100%);">
+                <a href="https://scraper-psi-five.vercel.app/" target="_blank" rel="noopener" class="pcard" data-category="web">
+                    <div class="pcard-preview" style="background: linear-gradient(135deg, #0b0f19, #1e1b4b);">
                         <img src="job_scraper_dashboard.png" alt="Job Scraper Dashboard" class="pcard-screenshot">
                         <div class="pcard-badge"><i class="fas fa-star"></i> Live</div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(6,182,212,0.5) 0%, transparent 70%);"></div>
                     </div>
                     <div class="pcard-body">
                         <span class="pcard-cat">Web Development</span>
                         <h4 class="pcard-title">Job Scraper Dashboard</h4>
-                        <p class="pcard-desc">Multi-platform job scraper & lead generation dashboard with real-time tracking & GHL export.</p>
+                        <p class="pcard-desc">A comprehensive automated web scraper and lead extraction dashboard built for Australian job portals with CSV/GHL exports.</p>
                         <div class="pcard-tags">
-                            <span>PHP</span><span>JavaScript</span><span>Python</span><span>REST API</span>
+                            <span>PHP</span><span>JavaScript</span><span>Python</span><span>Web Scraping</span><span>REST API</span>
+                        </div>
+                        <span class="pcard-btn"><i class="fas fa-external-link-alt"></i> Live Demo</span>
+                    </div>
+                </a>
+
+                <!-- Real Project: Browser Supply Clone -->
+                <a href="https://browser-supply-clone-7c1b.vercel.app/" target="_blank" rel="noopener" class="pcard" data-category="design">
+                    <div class="pcard-preview" style="background: linear-gradient(135deg, #0a0a0f, #0d1b2a);">
+                        <img src="browser_supply_preview.png" alt="Browser Supply Clone" class="pcard-screenshot">
+                        <div class="pcard-badge"><i class="fas fa-star"></i> Live</div>
+                    </div>
+                    <div class="pcard-body">
+                        <span class="pcard-cat">Web Design</span>
+                        <h4 class="pcard-title">Browser Supply Clone</h4>
+                        <p class="pcard-desc">A pixel-perfect clone of the Browser.supply website — a premium Framer template marketplace with modern dark UI.</p>
+                        <div class="pcard-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Framer</span>
                         </div>
                         <span class="pcard-btn"><i class="fas fa-external-link-alt"></i> Live Demo</span>
                     </div>
                 </a>
 
                 <!-- Real Project: Date Planner -->
-                <a href="https://dpplan.vercel.app/" target="_blank" rel="noopener" class="pcard" data-category="web" id="portfolio-date-planner">
+                <a href="https://dpplan.vercel.app/" target="_blank" rel="noopener" class="pcard" data-category="web">
                     <div class="pcard-preview" style="background: linear-gradient(135deg, #0d0914 0%, #2a1228 50%, #e11d48 100%);">
-                        <img src="date_planner_dashboard.png" alt="Date Planner - Date & Vacation Planner" class="pcard-screenshot">
+                        <img src="date_planner_dashboard.png" alt="Date Planner" class="pcard-screenshot">
                         <div class="pcard-badge"><i class="fas fa-star"></i> Live</div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(225,29,72,0.5) 0%, transparent 70%);"></div>
                     </div>
                     <div class="pcard-body">
                         <span class="pcard-cat">Web Application</span>
                         <h4 class="pcard-title">Date Planner</h4>
-                        <p class="pcard-desc">Interactive date & vacation planner for couples — just a small project I do for fun!</p>
+                        <p class="pcard-desc">An aesthetic date and vacation planning web app for couples to organize weekly dates and track plans — created for fun.</p>
                         <div class="pcard-tags">
-                            <span>React</span><span>Next.js</span><span>Tailwind</span><span>Vercel</span>
+                            <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>Vercel</span>
                         </div>
                         <span class="pcard-btn"><i class="fas fa-external-link-alt"></i> Live Demo</span>
                     </div>
                 </a>
 
-                <!-- Card 1 -->
-                <div class="pcard" data-category="web">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #00d4ff 0%, #0052cc 100%);">
-                        <div class="pcard-mockup">
-                            <div class="pm-bar"><span></span><span></span><span></span></div>
-                            <div class="pm-content">
-                                <div class="pm-line w80"></div>
-                                <div class="pm-line w60"></div>
-                                <div class="pm-grid">
-                                    <div class="pm-block"></div>
-                                    <div class="pm-block"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(0,212,255,0.6) 0%, transparent 70%);"></div>
-                    </div>
-                    <div class="pcard-body">
-                        <span class="pcard-cat">Web Development</span>
-                        <h4 class="pcard-title">E-Commerce Platform</h4>
-                        <p class="pcard-desc">A full-featured online store with cart, payments, and admin panel.</p>
-                        <div class="pcard-tags">
-                            <span>React</span><span>Node.js</span><span>MongoDB</span>
-                        </div>
-                        <a href="#" class="pcard-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="pcard" data-category="design">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #ff6b6b 0%, #c026d3 100%);">
-                        <div class="pcard-mockup">
-                            <div class="pm-bar"><span></span><span></span><span></span></div>
-                            <div class="pm-content">
-                                <div class="pm-circle"></div>
-                                <div class="pm-line w70" style="margin:10px auto;"></div>
-                                <div class="pm-line w50" style="margin:0 auto;"></div>
-                            </div>
-                        </div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(255,107,107,0.6) 0%, transparent 70%);"></div>
-                    </div>
-                    <div class="pcard-body">
-                        <span class="pcard-cat">UI/UX Design</span>
-                        <h4 class="pcard-title">Brand Identity</h4>
-                        <p class="pcard-desc">Complete brand kit including logo, color system, and typography.</p>
-                        <div class="pcard-tags">
-                            <span>Figma</span><span>Illustrator</span><span>Branding</span>
-                        </div>
-                        <a href="#" class="pcard-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="pcard" data-category="app">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);">
-                        <div class="pcard-mockup" style="width:70px;">
-                            <div class="pm-phone">
-                                <div class="pm-notch"></div>
-                                <div class="pm-line w60"></div>
-                                <div class="pm-line w80"></div>
-                                <div class="pm-line w40"></div>
-                                <div class="pm-pill"></div>
-                            </div>
-                        </div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(168,85,247,0.6) 0%, transparent 70%);"></div>
-                    </div>
-                    <div class="pcard-body">
-                        <span class="pcard-cat">App Development</span>
-                        <h4 class="pcard-title">Mobile App</h4>
-                        <p class="pcard-desc">Cross-platform app with real-time sync and push notifications.</p>
-                        <div class="pcard-tags">
-                            <span>Flutter</span><span>Firebase</span><span>Dart</span>
-                        </div>
-                        <a href="#" class="pcard-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="pcard" data-category="web">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #10b981 0%, #0891b2 100%);">
-                        <div class="pcard-mockup">
-                            <div class="pm-bar"><span></span><span></span><span></span></div>
-                            <div class="pm-content">
-                                <div class="pm-grid3">
-                                    <div class="pm-stat"></div>
-                                    <div class="pm-stat"></div>
-                                    <div class="pm-stat"></div>
-                                </div>
-                                <div class="pm-chart"></div>
-                            </div>
-                        </div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(16,185,129,0.6) 0%, transparent 70%);"></div>
-                    </div>
-                    <div class="pcard-body">
-                        <span class="pcard-cat">Web Development</span>
-                        <h4 class="pcard-title">Dashboard UI</h4>
-                        <p class="pcard-desc">Analytics dashboard with live charts, KPIs, and dark mode.</p>
-                        <div class="pcard-tags">
-                            <span>Vue.js</span><span>Chart.js</span><span>REST API</span>
-                        </div>
-                        <a href="#" class="pcard-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="pcard" data-category="design">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);">
-                        <div class="pcard-mockup">
-                            <div class="pm-bar"><span></span><span></span><span></span></div>
-                            <div class="pm-content">
-                                <div class="pm-hero-block"></div>
-                                <div class="pm-line w60" style="margin:8px auto 4px;"></div>
-                                <div class="pm-pill" style="margin:0 auto;"></div>
-                            </div>
-                        </div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(245,158,11,0.6) 0%, transparent 70%);"></div>
-                    </div>
-                    <div class="pcard-body">
-                        <span class="pcard-cat">Web Design</span>
-                        <h4 class="pcard-title">Landing Page</h4>
-                        <p class="pcard-desc">High-converting landing page with animations and A/B test sections.</p>
-                        <div class="pcard-tags">
-                            <span>HTML</span><span>GSAP</span><span>CSS</span>
-                        </div>
-                        <a href="#" class="pcard-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-
-                <!-- Card 6 — Real project -->
-                <a href="https://browser-supply-clone-7c1b.vercel.app/" target="_blank" rel="noopener" class="pcard" data-category="design" id="portfolio-browser-supply">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #0a0a0f 0%, #0d1b2a 50%, #00d4ff22 100%);">
-                        <div class="pcard-mockup">
-                            <div class="pm-bar"><span></span><span></span><span></span></div>
-                            <div class="pm-content">
-                                <div class="pm-line w80"></div>
-                                <div class="pm-line w50"></div>
-                                <div class="pm-grid">
-                                    <div class="pm-block" style="border: 1px solid rgba(0,212,255,0.4);"></div>
-                                    <div class="pm-block" style="border: 1px solid rgba(0,212,255,0.4);"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pcard-badge"><i class="fas fa-star"></i> Live</div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(0,212,255,0.5) 0%, transparent 70%);"></div>
-                    </div>
-                    <div class="pcard-body">
-                        <span class="pcard-cat">Web Design</span>
-                        <h4 class="pcard-title">Browser Supply Clone</h4>
-                        <p class="pcard-desc">Pixel-perfect recreation of a premium e-commerce storefront.</p>
-                        <div class="pcard-tags">
-                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                        </div>
-                        <span class="pcard-btn"><i class="fas fa-external-link-alt"></i> View Live</span>
-                    </div>
-                </a>
-
-                <!-- Card 7 -->
-                <div class="pcard" data-category="app">
-                    <div class="pcard-preview" style="background: linear-gradient(135deg, #22d3ee 0%, #16a34a 100%);">
-                        <div class="pcard-mockup" style="width:70px;">
-                            <div class="pm-phone">
-                                <div class="pm-notch"></div>
-                                <div class="pm-line w40"></div>
-                                <div class="pm-chart-mini"></div>
-                                <div class="pm-pill"></div>
-                            </div>
-                        </div>
-                        <div class="pcard-glow" style="background: radial-gradient(circle, rgba(34,211,238,0.6) 0%, transparent 70%);"></div>
-                    </div>
-                    <div class="pcard-body">
-                        <span class="pcard-cat">App Development</span>
-                        <h4 class="pcard-title">Fitness Tracker</h4>
-                        <p class="pcard-desc">Workout logging app with progress charts and streak tracking.</p>
-                        <div class="pcard-tags">
-                            <span>React Native</span><span>SQLite</span><span>Redux</span>
-                        </div>
-                        <a href="#" class="pcard-btn"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </div>
-                </div>
-
             </div>
-            <!-- Scroll arrows -->
             <button class="scroll-arrow scroll-arrow-left" id="scroll-left" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
             <button class="scroll-arrow scroll-arrow-right" id="scroll-right" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
         </div>
@@ -385,8 +248,10 @@
     <!-- ===== CONTACT SECTION ===== -->
     <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
-            <p class="section-subtitle">Let's work together on your next project</p>
+            <div style="text-align:center; margin-bottom:56px;">
+                <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Let's work together to build something amazing</p>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <a href="mailto:dunstandevon2@gmail.com" class="contact-item" id="contact-email" style="text-decoration: none; color: inherit; display: flex; transition: transform 0.2s ease;">
@@ -437,16 +302,6 @@
         </div>
     </footer>
 
-    <script>
-        // Fallback image if portrait.png doesn't exist
-        document.querySelectorAll('img[src="portrait.png"]').forEach(img => {
-            img.onerror = function() {
-                this.onerror = null;
-                this.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=face';
-            };
-        });
-    </script>
-    <!-- EmailJS SDK -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
