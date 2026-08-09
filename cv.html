@@ -82,7 +82,7 @@
             max-width: 850px;
             margin: 0 auto;
             background: var(--bg-paper);
-            padding: 50px 60px;
+            padding: 44px 54px;
             border-radius: 4px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             position: relative;
@@ -92,17 +92,17 @@
         .cv-header {
             display: flex;
             align-items: center;
-            gap: 36px;
-            padding-bottom: 24px;
-            margin-bottom: 24px;
+            gap: 32px;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         .cv-photo {
-            width: 130px;
-            height: 160px;
+            width: 120px;
+            height: 145px;
             object-fit: cover;
             border-radius: 4px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
             flex-shrink: 0;
         }
 
@@ -111,17 +111,17 @@
         }
 
         .cv-name {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             font-weight: 800;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
             color: #000000;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             line-height: 1.1;
         }
 
         .cv-contact {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             color: var(--text-muted);
             line-height: 1.6;
             font-weight: 500;
@@ -135,47 +135,47 @@
         .divider {
             height: 3px;
             background: #000000;
-            margin-bottom: 28px;
+            margin-bottom: 24px;
         }
 
         .section-heading {
             text-align: center;
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             font-weight: 800;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             color: #000000;
-            margin-bottom: 16px;
+            margin-bottom: 14px;
             position: relative;
         }
 
         .section-line {
             height: 1px;
             background: #000000;
-            margin: 24px 0;
+            margin: 20px 0;
         }
 
         /* About Me */
         .about-text {
-            font-size: 0.93rem;
+            font-size: 0.91rem;
             color: #1e293b;
             text-align: justify;
-            line-height: 1.65;
+            line-height: 1.6;
         }
 
         /* Strengths & Expertise */
         .expertise-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
+            gap: 14px;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
         }
 
         .expertise-column {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 6px;
         }
 
         .expertise-item {
@@ -186,56 +186,56 @@
             display: block;
             color: var(--text-muted);
             font-weight: 400;
-            font-size: 0.82rem;
+            font-size: 0.8rem;
         }
 
         /* Job Experience */
         .job-item {
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .job-company {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 700;
             color: #000000;
         }
 
         .job-date {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 700;
             color: #000000;
         }
 
         .job-role {
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             font-weight: 600;
             color: var(--text-muted);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .accomplishments-title {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 600;
             color: #000000;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
 
         .job-bullets {
-            padding-left: 20px;
-            font-size: 0.88rem;
+            padding-left: 18px;
+            font-size: 0.86rem;
             color: #334155;
         }
 
         .job-bullets li {
-            margin-bottom: 8px;
-            line-height: 1.55;
+            margin-bottom: 6px;
+            line-height: 1.5;
             text-align: justify;
         }
 
@@ -243,7 +243,7 @@
         .edu-grid {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
         }
 
         .edu-item {
@@ -254,12 +254,12 @@
 
         .edu-school {
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             color: #000000;
         }
 
         .edu-field {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             color: var(--text-muted);
         }
 
@@ -267,8 +267,8 @@
         .ref-list {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            font-size: 0.9rem;
+            gap: 8px;
+            font-size: 0.88rem;
         }
 
         .ref-item {
@@ -284,25 +284,100 @@
             color: var(--text-muted);
         }
 
-        /* Print Media Styles */
+        /* ── PAGE PRINT MEDIA OPTIMIZATION ── */
+        @page {
+            size: A4 portrait;
+            margin: 12mm 15mm;
+        }
+
         @media print {
             body {
-                background: #ffffff;
-                padding: 0;
+                background: #ffffff !important;
+                color: #000000 !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                font-size: 9.5pt !important;
             }
             .toolbar {
                 display: none !important;
             }
             .cv-paper {
-                box-shadow: none;
-                padding: 20px 30px;
-                max-width: 100%;
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+            .cv-header {
+                gap: 24px !important;
+                padding-bottom: 12px !important;
+                margin-bottom: 12px !important;
+            }
+            .cv-photo {
+                width: 105px !important;
+                height: 125px !important;
+            }
+            .cv-name {
+                font-size: 2.1rem !important;
+                margin-bottom: 4px !important;
+            }
+            .cv-contact {
+                font-size: 8.8pt !important;
+                line-height: 1.5 !important;
+            }
+            .divider {
+                height: 2px !important;
+                margin-bottom: 14px !important;
+            }
+            .section-heading {
+                font-size: 1.05rem !important;
+                margin-bottom: 10px !important;
+                break-after: avoid !important;
+                page-break-after: avoid !important;
             }
             .section-line {
-                margin: 18px 0;
+                height: 1px !important;
+                margin: 14px 0 !important;
+            }
+            .about-text {
+                font-size: 8.8pt !important;
+                line-height: 1.48 !important;
             }
             .job-item {
-                page-break-inside: avoid;
+                margin-bottom: 14px !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+            }
+            .job-header {
+                break-after: avoid !important;
+                page-break-after: avoid !important;
+            }
+            .job-company {
+                font-size: 0.98rem !important;
+            }
+            .job-role {
+                font-size: 0.86rem !important;
+                margin-bottom: 3px !important;
+            }
+            .accomplishments-title {
+                font-size: 0.82rem !important;
+                margin-bottom: 2px !important;
+            }
+            .job-bullets {
+                font-size: 8.4pt !important;
+                padding-left: 16px !important;
+            }
+            .job-bullets li {
+                margin-bottom: 3px !important;
+                line-height: 1.42 !important;
+            }
+            .expertise-grid, .edu-grid, .ref-list {
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+            }
+            a {
+                text-decoration: none !important;
+                color: inherit !important;
             }
         }
     </style>
