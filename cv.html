@@ -6,16 +6,15 @@
     <title>Dunstan Devon - Curriculum Vitae</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
-            --primary: #0f172a;
-            --accent: #2563eb;
-            --text-dark: #0f172a;
-            --text-muted: #475569;
-            --border-color: #cbd5e1;
-            --bg-body: #f1f5f9;
+            --primary: #000000;
+            --text-dark: #000000;
+            --text-muted: #333333;
+            --border-color: #000000;
+            --bg-body: #e2e8f0;
             --bg-paper: #ffffff;
         }
 
@@ -26,9 +25,9 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: var(--bg-body);
-            color: var(--text-dark);
+            color: #000000;
             line-height: 1.5;
             padding: 40px 20px;
         }
@@ -36,7 +35,7 @@
         /* Action Toolbar */
         .toolbar {
             max-width: 850px;
-            margin: 0 auto 20px auto;
+            margin: 0 auto 24px auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -61,7 +60,7 @@
         }
 
         .btn-primary {
-            background: var(--accent);
+            background: #2563eb;
             color: #ffffff;
         }
         .btn-primary:hover {
@@ -70,8 +69,8 @@
 
         .btn-outline {
             background: transparent;
-            color: var(--text-dark);
-            border: 1px solid var(--border-color);
+            color: #0f172a;
+            border: 1px solid #cbd5e1;
         }
         .btn-outline:hover {
             background: #f8fafc;
@@ -82,9 +81,9 @@
             max-width: 850px;
             margin: 0 auto;
             background: var(--bg-paper);
-            padding: 48px 56px;
-            border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            padding: 60px 70px;
+            border-radius: 2px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             position: relative;
         }
 
@@ -92,75 +91,68 @@
         .cv-header {
             display: flex;
             align-items: center;
-            gap: 32px;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            gap: 40px;
+            margin-bottom: 24px;
         }
 
         .cv-photo {
-            width: 130px;
-            height: 155px;
+            width: 145px;
+            height: 175px;
             object-fit: cover;
-            border-radius: 4px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            border-radius: 2px;
             flex-shrink: 0;
         }
 
         .header-text {
             flex-grow: 1;
+            text-align: center;
         }
 
         .cv-name {
-            font-size: 2.4rem;
+            font-size: 2.6rem;
             font-weight: 800;
-            letter-spacing: 1.5px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             color: #000000;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
             line-height: 1.1;
         }
 
         .cv-contact {
-            font-size: 0.96rem;
-            color: var(--text-muted);
+            font-size: 0.95rem;
+            color: #000000;
             line-height: 1.6;
             font-weight: 500;
-        }
-
-        .cv-contact i {
-            width: 18px;
-            color: var(--accent);
         }
 
         .divider {
             height: 3px;
             background: #000000;
-            margin-bottom: 24px;
+            margin: 24px 0;
         }
 
         .section-heading {
             text-align: center;
             font-size: 1.15rem;
             font-weight: 800;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             color: #000000;
-            margin-bottom: 14px;
-            position: relative;
+            margin-bottom: 18px;
         }
 
         .section-line {
-            height: 1px;
+            height: 1.5px;
             background: #000000;
-            margin: 22px 0;
+            margin: 24px 0;
         }
 
         /* About Me */
         .about-text {
             font-size: 0.95rem;
-            color: #1e293b;
+            color: #000000;
             text-align: justify;
-            line-height: 1.62;
+            line-height: 1.65;
         }
 
         /* Strengths & Expertise */
@@ -170,6 +162,7 @@
             gap: 16px;
             text-align: center;
             font-size: 0.92rem;
+            line-height: 1.6;
         }
 
         .expertise-column {
@@ -180,18 +173,12 @@
 
         .expertise-item {
             font-weight: 500;
-            color: #1e293b;
-        }
-        .expertise-item small {
-            display: block;
-            color: var(--text-muted);
-            font-weight: 400;
-            font-size: 0.83rem;
+            color: #000000;
         }
 
         /* Job Experience */
         .job-item {
-            margin-bottom: 24px;
+            margin-bottom: 28px;
         }
 
         .job-header {
@@ -208,33 +195,33 @@
         }
 
         .job-date {
-            font-size: 0.92rem;
+            font-size: 0.95rem;
             font-weight: 700;
             color: #000000;
         }
 
         .job-role {
-            font-size: 0.96rem;
-            font-weight: 600;
-            color: var(--text-muted);
-            margin-bottom: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
         }
 
         .accomplishments-title {
-            font-size: 0.9rem;
-            font-weight: 600;
+            font-size: 0.95rem;
+            font-weight: 500;
             color: #000000;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
         .job-bullets {
-            padding-left: 18px;
-            font-size: 0.9rem;
-            color: #334155;
+            padding-left: 20px;
+            font-size: 0.92rem;
+            color: #000000;
         }
 
         .job-bullets li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             line-height: 1.55;
             text-align: justify;
         }
@@ -243,7 +230,7 @@
         .edu-grid {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
 
         .edu-item {
@@ -254,25 +241,25 @@
 
         .edu-school {
             font-weight: 700;
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #000000;
         }
 
         .edu-field {
-            font-size: 0.92rem;
-            color: var(--text-muted);
+            font-size: 0.95rem;
+            color: #000000;
         }
 
         /* References */
         .ref-list {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-            font-size: 0.9rem;
+            gap: 10px;
+            font-size: 0.95rem;
         }
 
         .ref-item {
-            line-height: 1.42;
+            line-height: 1.45;
         }
 
         .ref-name {
@@ -281,13 +268,13 @@
         }
 
         .ref-phone {
-            color: var(--text-muted);
+            color: #000000;
         }
 
-        /* ── PRINT MEDIA OPTIMIZATION (LARGER TEXT + BREATHABLE TOP MARGIN) ── */
+        /* ── PRINT MEDIA STYLES (MATCHES THE 3 PDF SCREENSHOTS 100%) ── */
         @page {
             size: A4 portrait;
-            margin: 20mm 18mm 18mm 18mm; /* 20mm top margin so text never touches page top */
+            margin: 20mm 20mm 20mm 20mm;
         }
 
         @media print {
@@ -296,7 +283,7 @@
                 color: #000000 !important;
                 padding: 0 !important;
                 margin: 0 !important;
-                font-size: 10.5pt !important;
+                font-size: 10pt !important;
                 line-height: 1.5 !important;
             }
             .toolbar {
@@ -310,92 +297,94 @@
                 width: 100% !important;
             }
             .cv-header {
-                gap: 26px !important;
-                padding-bottom: 14px !important;
-                margin-bottom: 14px !important;
+                gap: 32px !important;
+                margin-bottom: 20px !important;
             }
             .cv-photo {
-                width: 118px !important;
-                height: 142px !important;
+                width: 140px !important;
+                height: 165px !important;
             }
             .cv-name {
-                font-size: 2.3rem !important;
-                margin-bottom: 6px !important;
+                font-size: 2.5rem !important;
+                letter-spacing: 3px !important;
+                margin-bottom: 10px !important;
             }
             .cv-contact {
-                font-size: 9.8pt !important;
-                line-height: 1.55 !important;
+                font-size: 9.5pt !important;
+                line-height: 1.6 !important;
             }
             .divider {
-                height: 2.5px !important;
-                margin-bottom: 16px !important;
+                height: 3px !important;
+                background: #000000 !important;
+                margin: 20px 0 !important;
             }
             .section-heading {
                 font-size: 1.15rem !important;
-                margin-bottom: 12px !important;
+                margin-bottom: 14px !important;
+                letter-spacing: 2px !important;
                 break-after: avoid !important;
                 page-break-after: avoid !important;
             }
             .section-line {
-                height: 1px !important;
-                margin: 16px 0 !important;
+                height: 1.5px !important;
+                background: #000000 !important;
+                margin: 20px 0 !important;
             }
             .about-text {
-                font-size: 10pt !important;
-                line-height: 1.55 !important;
+                font-size: 9.8pt !important;
+                line-height: 1.6 !important;
             }
             .expertise-grid {
-                gap: 10px !important;
+                gap: 12px !important;
                 font-size: 9.5pt !important;
             }
             .job-item {
-                margin-bottom: 20px !important;
-                padding-top: 6px !important;
+                margin-bottom: 24px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
             .job-header {
-                margin-bottom: 3px !important;
+                margin-bottom: 4px !important;
                 break-after: avoid !important;
                 page-break-after: avoid !important;
             }
             .job-company {
-                font-size: 1.1rem !important;
+                font-size: 1.08rem !important;
             }
             .job-date {
-                font-size: 0.94rem !important;
+                font-size: 0.95rem !important;
             }
             .job-role {
-                font-size: 0.95rem !important;
-                margin-bottom: 6px !important;
+                font-size: 1rem !important;
+                margin-bottom: 8px !important;
             }
             .accomplishments-title {
                 font-size: 0.92rem !important;
-                margin-bottom: 4px !important;
+                margin-bottom: 6px !important;
             }
             .job-bullets {
-                font-size: 9.4pt !important;
-                padding-left: 18px !important;
+                font-size: 9.5pt !important;
+                padding-left: 20px !important;
             }
             .job-bullets li {
-                margin-bottom: 5px !important;
-                line-height: 1.5 !important;
+                margin-bottom: 6px !important;
+                line-height: 1.55 !important;
             }
             .edu-grid {
-                gap: 8px !important;
+                gap: 10px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
-            .edu-school { font-size: 0.98rem !important; }
-            .edu-field  { font-size: 0.92rem !important; }
+            .edu-school { font-size: 1rem !important; }
+            .edu-field  { font-size: 0.95rem !important; }
             .ref-list {
-                gap: 8px !important;
+                gap: 10px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
-            .ref-item { font-size: 9.2pt !important; line-height: 1.45 !important; }
+            .ref-item { font-size: 9.5pt !important; line-height: 1.5 !important; }
 
-            /* Explicit page break helpers */
+            /* Forced page break helpers */
             .page-break-after {
                 break-after: page !important;
                 page-break-after: always !important;
@@ -430,8 +419,8 @@
             <div class="header-text">
                 <h1 class="cv-name">DUNSTAN DEVON</h1>
                 <div class="cv-contact">
-                    <p><i class="fas fa-phone"></i> 0895630478594 &nbsp;·&nbsp; <i class="fas fa-envelope"></i> dunstandevon2@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> JL Petitenget Gang Rahayu III., Bali</p>
+                    <p>0895630478594 &nbsp;·&nbsp; dunstandevon2@gmail.com &nbsp;·&nbsp;</p>
+                    <p>JL Petitenget Gang Rahayu III., Bali</p>
                 </div>
             </div>
         </div>
@@ -441,7 +430,7 @@
         <!-- About Me -->
         <h2 class="section-heading">ABOUT ME</h2>
         <p class="about-text">
-            I am an adaptive and meticulous individual, accustomed to working in a structured manner to resolve various challenges efficiently. I possess strong analytical skills that enable me to understand requirements and translate them into effective solutions, supported by strong teamwork and collaboration abilities. In addition, I have solid public speaking skills and am able to communicate effectively in English, both verbally and in writing. As an added value, I have equipped myself with technical proficiency in Web Development and Microsoft Excel to support work productivity.
+            I am an adaptive and meticulous individual, accustomed to working in a structured manner to resolve various challenges efficiently. I possess strong analytical skills that enable me to understand requirements and translate them into effective solutions, supported by strong teamwork and collaboration abilities. In addition, I have solid public speaking skills and am able to communicate effectively in English, both verbally and in writing. As an added value, I have equipped myself with technical proficiency in Web Development and Microsoft Excel to support work productivity
         </p>
 
         <div class="section-line"></div>
@@ -460,9 +449,10 @@
                 <div class="expertise-item">Operational Management</div>
             </div>
             <div class="expertise-column">
-                <div class="expertise-item">Microsoft Excel <small>(Reporting)</small></div>
-                <div class="expertise-item">Spreadsheet Automation <small>(Formulas)</small></div>
-                <div class="expertise-item">Data Visualization <small>(Excel Charts)</small></div>
+                <div class="expertise-item">Microsoft Excel ( Reporting)</div>
+                <div class="expertise-item">Spreadsheet Automation</div>
+                <div class="expertise-item">(Formulas)</div>
+                <div class="expertise-item">Data Visualization (Excel Charts)</div>
             </div>
         </div>
 
@@ -475,7 +465,7 @@
         <div class="job-item page-break-after">
             <div class="job-header">
                 <span class="job-company">Interlace Studies</span>
-                <span class="job-date">April 2026 - Present</span>
+                <span class="job-date">April 2026- Present</span>
             </div>
             <div class="job-role">Full Stack Programmer</div>
             <div class="accomplishments-title">Accomplishments:</div>
@@ -490,7 +480,7 @@
         <div class="job-item">
             <div class="job-header">
                 <span class="job-company">Smokey’s Protein Smoothies</span>
-                <span class="job-date">April 2022 - 2026</span>
+                <span class="job-date">April 2022- 2026</span>
             </div>
             <div class="job-role">Store Crew</div>
             <div class="accomplishments-title">Accomplishments:</div>
@@ -546,7 +536,7 @@
         <div class="edu-grid">
             <div class="edu-item">
                 <span class="edu-school">STIKOM BALI</span>
-                <span class="edu-field">Information Technology</span>
+                <span class="edu-field">information Technology</span>
             </div>
             <div class="edu-item">
                 <span class="edu-school">SMK TI BALI GLOBAL JIMBARAN</span>
@@ -559,7 +549,7 @@
         <!-- References (Page 3) -->
         <div class="ref-list">
             <div class="ref-item">
-                <span class="ref-name">Ida Bagus Irawan Purnama, S.T., M.Sc., Ph.D.</span> (Leader Interlace Studies)<br>
+                <span class="ref-name">Ida Bagus Irawan Purnama, S.T., M,Sc., Ph.D.</span> (Leader Interlace Studies)<br>
                 <span class="ref-phone">+62 811-395-648</span>
             </div>
             <div class="ref-item">
