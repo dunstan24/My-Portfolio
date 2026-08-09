@@ -1,0 +1,13 @@
+[
+    {
+        "id": "msg_welcome_demo",
+        "name": "Alex Mercer",
+        "email": "alex.mercer@example.com",
+        "subject": "Web App Development Inquiry",
+        "message": "Hi Dunstan!\n\nI came across your portfolio and I am very impressed with your work. I have an upcoming project for a client portal and would love to hire you for web development.\n\nPlease let me know your availability for a call this week.\n\nBest regards,\nAlex Mercer",
+        "created_at": "2026-08-05 00:40:00",
+        "date_formatted": "August 5, 2026, 12:40 am",
+        "ip": "127.0.0.1",
+        "read": false
+    }
+]

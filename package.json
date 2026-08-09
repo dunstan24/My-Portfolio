@@ -1,0 +1,17 @@
+{
+  "name": "dunstan-devon-portfolio",
+  "version": "1.0.0",
+  "description": "Dunstan Devon - Web Developer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "copy-img": "node copy_img.js",
+    "predev": "node copy_img.js",
+    "dev": "php -S localhost:8000 -t public",
+    "serve": "php artisan serve",
+    "prestart": "node copy_img.js",
+    "start": "php -S localhost:8000 -t public"
+  },
+  "keywords": ["portfolio", "laravel", "frontend"],
+  "author": "Dunstan Devon",
+  "license": "ISC"
+}
