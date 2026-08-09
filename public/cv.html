@@ -82,7 +82,7 @@
             max-width: 850px;
             margin: 0 auto;
             background: var(--bg-paper);
-            padding: 44px 54px;
+            padding: 48px 56px;
             border-radius: 4px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             position: relative;
@@ -98,8 +98,8 @@
         }
 
         .cv-photo {
-            width: 125px;
-            height: 150px;
+            width: 130px;
+            height: 155px;
             object-fit: cover;
             border-radius: 4px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.12);
@@ -111,7 +111,7 @@
         }
 
         .cv-name {
-            font-size: 2.3rem;
+            font-size: 2.4rem;
             font-weight: 800;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -121,7 +121,7 @@
         }
 
         .cv-contact {
-            font-size: 0.94rem;
+            font-size: 0.96rem;
             color: var(--text-muted);
             line-height: 1.6;
             font-weight: 500;
@@ -140,7 +140,7 @@
 
         .section-heading {
             text-align: center;
-            font-size: 1.12rem;
+            font-size: 1.15rem;
             font-weight: 800;
             letter-spacing: 1.5px;
             text-transform: uppercase;
@@ -152,24 +152,24 @@
         .section-line {
             height: 1px;
             background: #000000;
-            margin: 20px 0;
+            margin: 22px 0;
         }
 
         /* About Me */
         .about-text {
-            font-size: 0.93rem;
+            font-size: 0.95rem;
             color: #1e293b;
             text-align: justify;
-            line-height: 1.6;
+            line-height: 1.62;
         }
 
         /* Strengths & Expertise */
         .expertise-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
+            gap: 16px;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.92rem;
         }
 
         .expertise-column {
@@ -186,12 +186,12 @@
             display: block;
             color: var(--text-muted);
             font-weight: 400;
-            font-size: 0.82rem;
+            font-size: 0.83rem;
         }
 
         /* Job Experience */
         .job-item {
-            margin-bottom: 22px;
+            margin-bottom: 24px;
         }
 
         .job-header {
@@ -202,40 +202,40 @@
         }
 
         .job-company {
-            font-size: 1.08rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: #000000;
         }
 
         .job-date {
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             font-weight: 700;
             color: #000000;
         }
 
         .job-role {
-            font-size: 0.94rem;
+            font-size: 0.96rem;
             font-weight: 600;
             color: var(--text-muted);
             margin-bottom: 8px;
         }
 
         .accomplishments-title {
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             font-weight: 600;
             color: #000000;
-            margin-bottom: 4px;
+            margin-bottom: 5px;
         }
 
         .job-bullets {
             padding-left: 18px;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
             color: #334155;
         }
 
         .job-bullets li {
             margin-bottom: 6px;
-            line-height: 1.52;
+            line-height: 1.55;
             text-align: justify;
         }
 
@@ -254,12 +254,12 @@
 
         .edu-school {
             font-weight: 700;
-            font-size: 0.94rem;
+            font-size: 0.95rem;
             color: #000000;
         }
 
         .edu-field {
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             color: var(--text-muted);
         }
 
@@ -268,11 +268,11 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
-            font-size: 0.88rem;
+            font-size: 0.9rem;
         }
 
         .ref-item {
-            line-height: 1.4;
+            line-height: 1.42;
         }
 
         .ref-name {
@@ -284,10 +284,10 @@
             color: var(--text-muted);
         }
 
-        /* ── EXACT 3-PAGE PRINT SPECIFICATION ── */
+        /* ── PRINT MEDIA OPTIMIZATION (LARGER TEXT + BREATHABLE TOP MARGIN) ── */
         @page {
             size: A4 portrait;
-            margin: 12mm 16mm;
+            margin: 20mm 18mm 18mm 18mm; /* 20mm top margin so text never touches page top */
         }
 
         @media print {
@@ -296,8 +296,8 @@
                 color: #000000 !important;
                 padding: 0 !important;
                 margin: 0 !important;
-                font-size: 9.6pt !important;
-                line-height: 1.48 !important;
+                font-size: 10.5pt !important;
+                line-height: 1.5 !important;
             }
             .toolbar {
                 display: none !important;
@@ -310,86 +310,90 @@
                 width: 100% !important;
             }
             .cv-header {
-                gap: 24px !important;
-                padding-bottom: 12px !important;
-                margin-bottom: 12px !important;
+                gap: 26px !important;
+                padding-bottom: 14px !important;
+                margin-bottom: 14px !important;
             }
             .cv-photo {
-                width: 110px !important;
-                height: 132px !important;
+                width: 118px !important;
+                height: 142px !important;
             }
             .cv-name {
-                font-size: 2.1rem !important;
+                font-size: 2.3rem !important;
                 margin-bottom: 6px !important;
             }
             .cv-contact {
-                font-size: 9pt !important;
-                line-height: 1.5 !important;
+                font-size: 9.8pt !important;
+                line-height: 1.55 !important;
             }
             .divider {
                 height: 2.5px !important;
-                margin-bottom: 14px !important;
+                margin-bottom: 16px !important;
             }
             .section-heading {
-                font-size: 1.05rem !important;
-                margin-bottom: 10px !important;
+                font-size: 1.15rem !important;
+                margin-bottom: 12px !important;
                 break-after: avoid !important;
                 page-break-after: avoid !important;
             }
             .section-line {
                 height: 1px !important;
-                margin: 14px 0 !important;
+                margin: 16px 0 !important;
             }
             .about-text {
-                font-size: 9.2pt !important;
-                line-height: 1.52 !important;
+                font-size: 10pt !important;
+                line-height: 1.55 !important;
             }
             .expertise-grid {
-                gap: 8px !important;
-                font-size: 8.8pt !important;
+                gap: 10px !important;
+                font-size: 9.5pt !important;
             }
             .job-item {
-                margin-bottom: 16px !important;
+                margin-bottom: 20px !important;
+                padding-top: 6px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
             .job-header {
-                margin-bottom: 2px !important;
+                margin-bottom: 3px !important;
                 break-after: avoid !important;
                 page-break-after: avoid !important;
             }
             .job-company {
-                font-size: 1rem !important;
+                font-size: 1.1rem !important;
             }
             .job-date {
-                font-size: 0.88rem !important;
+                font-size: 0.94rem !important;
             }
             .job-role {
-                font-size: 0.88rem !important;
-                margin-bottom: 4px !important;
+                font-size: 0.95rem !important;
+                margin-bottom: 6px !important;
             }
             .accomplishments-title {
-                font-size: 0.85rem !important;
-                margin-bottom: 3px !important;
+                font-size: 0.92rem !important;
+                margin-bottom: 4px !important;
             }
             .job-bullets {
-                font-size: 8.8pt !important;
-                padding-left: 16px !important;
+                font-size: 9.4pt !important;
+                padding-left: 18px !important;
             }
             .job-bullets li {
-                margin-bottom: 4px !important;
-                line-height: 1.48 !important;
+                margin-bottom: 5px !important;
+                line-height: 1.5 !important;
             }
             .edu-grid {
-                gap: 6px !important;
+                gap: 8px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
+            .edu-school { font-size: 0.98rem !important; }
+            .edu-field  { font-size: 0.92rem !important; }
             .ref-list {
-                gap: 6px !important;
+                gap: 8px !important;
                 break-inside: avoid !important;
                 page-break-inside: avoid !important;
             }
+            .ref-item { font-size: 9.2pt !important; line-height: 1.45 !important; }
 
             /* Explicit page break helpers */
             .page-break-after {
@@ -482,7 +486,7 @@
             </ul>
         </div>
 
-        <!-- Job 2 (Page 2) -->
+        <!-- Job 2 (Start of Page 2) -->
         <div class="job-item">
             <div class="job-header">
                 <span class="job-company">Smokey’s Protein Smoothies</span>
@@ -517,7 +521,7 @@
             </ul>
         </div>
 
-        <!-- Job 4 (Page 3) -->
+        <!-- Job 4 (Start of Page 3) -->
         <div class="job-item">
             <div class="job-header">
                 <span class="job-company">Duwur Studio</span>
