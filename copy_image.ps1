@@ -20,4 +20,10 @@ $dst3_4 = "c:\Users\USER\Desktop\New folder (3)\public\date_planner_dashboard.pn
 [System.IO.File]::Copy($src3, $dst3_3, $true)
 [System.IO.File]::Copy($src3, $dst3_4, $true)
 
+$src4 = "C:\Users\USER\.gemini\antigravity-ide\brain\2e45ae78-93eb-4ace-b363-47c3f61f92a2\media__1786542834148.png"
+$dst4_1 = "c:\Users\USER\Desktop\New folder (3)\iswara_dashboard.png"
+$dst4_2 = "c:\Users\USER\Desktop\New folder (3)\public\iswara_dashboard.png"
+[System.IO.File]::Copy($src4, $dst4_1, $true)
+[System.IO.File]::Copy($src4, $dst4_2, $true)
+
 Write-Host "Images copied successfully!"

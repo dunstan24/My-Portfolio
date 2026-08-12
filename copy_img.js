@@ -46,6 +46,13 @@ const items = [
         dests: [
             path.join(__dirname, 'browser_supply_preview.png')
         ]
+    },
+    {
+        src: 'C:/Users/USER/.gemini/antigravity-ide/brain/2e45ae78-93eb-4ace-b363-47c3f61f92a2/media__1786542834148.png',
+        dests: [
+            path.join(__dirname, 'public/iswara_dashboard.png'),
+            path.join(__dirname, 'iswara_dashboard.png')
+        ]
     }
 ];
 

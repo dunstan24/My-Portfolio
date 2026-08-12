@@ -125,6 +125,34 @@ class ProjectController
                 ],
                 'live_url'   => 'https://dpplan.vercel.app/',
                 'github_url' => '#'
+            ],
+            'iswara-sapuh-jagat' => [
+                'id'             => 5,
+                'slug'           => 'iswara-sapuh-jagat',
+                'title'          => 'ISWARA - TPS 3R Sapuh Jagat',
+                'category'       => 'web',
+                'category_label' => 'Web Application',
+                'gradient'       => 'linear-gradient(135deg, #1c1917 0%, #7f1d1d 50%, #dc2626 100%)',
+                'screenshot_url' => '/iswara_dashboard.png',
+                'is_live'        => true,
+                'icon'           => 'fa-recycle',
+                'tags'           => ['Web Application', 'Tailwind CSS', 'Vercel', 'Waste Management'],
+                'tagline'        => 'Digital waste management & TPS 3R operations tracking platform in Bali.',
+                'description'    => 'Platform digital untuk mengelola layanan persampahan, memantau operasional TPS 3R, dan menyediakan informasi layanan yang transparan bagi masyarakat serta pemerintah Desa Gulingan, Mengwi, Badung, Bali.',
+                'tech_stack'     => ['PHP', 'JavaScript', 'Tailwind CSS', 'Vercel', 'REST API'],
+                'features'       => [
+                    'Digital waste management service tracking for Desa Gulingan, Mengwi, Badung, Bali',
+                    'Real-time monitoring of TPS 3R recycling statistics, ticketing, and service coverage',
+                    'Interactive service map (Peta Layanan) and statistical dashboard',
+                    'Public transparency portal for local community and government'
+                ],
+                'metrics' => [
+                    ['label' => 'Recycling Rate', 'value' => '73%'],
+                    ['label' => 'Ticketing Resolution', 'value' => '92%'],
+                    ['label' => 'Live Demo', 'value' => 'Vercel']
+                ],
+                'live_url'   => 'https://iswarademo.vercel.app/',
+                'github_url' => '#'
             ]
         ];
     }
