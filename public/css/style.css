@@ -617,21 +617,17 @@ body::after {
 }
 
 /* ── Horizontal scroll wrapper ── */
-.portfolio-scroll-wrapper { position:relative; }
+.portfolio-scroll-wrapper { position:relative; width:100%; }
 
 .portfolio-track {
   display:flex; gap:28px;
-  justify-content:center;
-  max-width:1480px; margin:0 auto;
+  justify-content:flex-start;
+  width:100%; max-width:100%; margin:0 auto;
   overflow-x:auto; scroll-behavior:smooth;
   scrollbar-width:none;
-  padding:20px 40px 40px;
+  padding:20px 60px 40px;
+  scroll-padding:0 60px;
   cursor:grab; user-select:none;
-}
-@media (max-width: 1480px) {
-  .portfolio-track {
-    justify-content:flex-start;
-  }
 }
 .portfolio-track::-webkit-scrollbar { display:none; }
 .portfolio-track.grabbing { cursor:grabbing; }

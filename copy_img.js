@@ -53,6 +53,12 @@ const items = [
             path.join(__dirname, 'public/iswara_dashboard.png'),
             path.join(__dirname, 'iswara_dashboard.png')
         ]
+    },
+    {
+        src: path.join(__dirname, 'public/iswara_dashboard.png'),
+        dests: [
+            path.join(__dirname, 'iswara_dashboard.png')
+        ]
     }
 ];
 
