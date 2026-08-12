@@ -138,7 +138,7 @@ class ProjectController
                 'icon'           => 'fa-recycle',
                 'tags'           => ['Web Application', 'Tailwind CSS', 'Vercel', 'Waste Management'],
                 'tagline'        => 'Digital waste management & TPS 3R operations tracking platform in Bali.',
-                'description'    => 'Platform digital untuk mengelola layanan persampahan, memantau operasional TPS 3R, dan menyediakan informasi layanan yang transparan bagi masyarakat serta pemerintah Desa Gulingan, Mengwi, Badung, Bali.',
+                'description'    => 'A digital platform for managing waste collection services, monitoring TPS 3R facility operations, and providing transparent service information for the community and local government in Bali.',
                 'tech_stack'     => ['PHP', 'JavaScript', 'Tailwind CSS', 'Vercel', 'REST API'],
                 'features'       => [
                     'Digital waste management service tracking for Desa Gulingan, Mengwi, Badung, Bali',
