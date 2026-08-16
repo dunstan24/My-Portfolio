@@ -153,6 +153,34 @@ class ProjectController
                 ],
                 'live_url'   => 'https://iswarademo.vercel.app/',
                 'github_url' => '#'
+            ],
+            'smokeys-macro-calculator' => [
+                'id'             => 6,
+                'slug'           => 'smokeys-macro-calculator',
+                'title'          => "Smokey's Macro Calculator",
+                'category'       => 'web',
+                'category_label' => 'Web Application',
+                'gradient'       => 'linear-gradient(135deg, #09090b 0%, #18181b 50%, #ca210e 100%)',
+                'screenshot_url' => '/macro_app_dashboard.png',
+                'is_live'        => true,
+                'icon'           => 'fa-calculator',
+                'tags'           => ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+                'tagline'        => 'Interactive smoothie customizer & macro nutrition calculator.',
+                'description'    => 'An interactive smoothie blend builder and macronutrient calculator that computes calories, protein, carbs, and fats in real-time with customizable recipes, milk choices, and add-ons.',
+                'tech_stack'     => ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+                'features'       => [
+                    'Interactive step-by-step smoothie blend builder',
+                    'Real-time macronutrient calculation (Calories, Protein, Carbs, Fat)',
+                    'Customizable milk bases, protein options, and add-on selections',
+                    'Best Seller preset formulas and community favorites modal'
+                ],
+                'metrics' => [
+                    ['label' => 'Framework',  'value' => 'React / TS'],
+                    ['label' => 'Deployment', 'value' => 'Vercel'],
+                    ['label' => 'Status',     'value' => 'Live Demo']
+                ],
+                'live_url'   => 'https://macro-app2-eoyi.vercel.app/',
+                'github_url' => '#'
             ]
         ];
     }

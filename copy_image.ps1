@@ -26,4 +26,10 @@ $dst4_2 = "c:\Users\USER\Desktop\New folder (3)\public\iswara_dashboard.png"
 [System.IO.File]::Copy($src4, $dst4_1, $true)
 [System.IO.File]::Copy($src4, $dst4_2, $true)
 
+$src5 = "C:\Users\USER\.gemini\antigravity-ide\brain\8d1b0748-cca6-4ba7-bbd0-9fa92369adb3\media__1786885507080.png"
+$dst5_1 = "c:\Users\USER\Desktop\New folder (3)\macro_app_dashboard.png"
+$dst5_2 = "c:\Users\USER\Desktop\New folder (3)\public\macro_app_dashboard.png"
+[System.IO.File]::Copy($src5, $dst5_1, $true)
+[System.IO.File]::Copy($src5, $dst5_2, $true)
+
 Write-Host "Images copied successfully!"
